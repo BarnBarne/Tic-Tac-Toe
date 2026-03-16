@@ -1,118 +1,201 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: rgb(246, 238, 255);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(246, 238, 255);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.emptyBtn {
+  margin-bottom: 1rem;
+  color: rgb(84, 49, 141);
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.emptyBtn:hover {
+  background-color: rgb(223, 204, 253);
+}
+
+.fullBtn {
+  background-color: rgb(84, 49, 141);
+  color: white;
+}
+
+.fullBtn:hover {
+  background-color: rgb(121, 81, 185);
 }
 
 header {
-    background-color: rgb(84, 49, 141);
-    height: 10rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: rgb(84, 49, 141);
+  height: 10rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header h1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header h2 {
-    margin: 1rem 0 0 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 100;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 #user-info-forms {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .user-info {
-    background-color: rgb(234, 220, 255);
-    margin: 0 1rem;
-    width: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(234, 220, 255);
+  margin: 0 1rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .player-number {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 1rem 0 .5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .player-name {
-    margin: 0 0 .5rem 0;
-    font-size: 1.5rem;
-    color: rgb(84, 49, 141);
-    font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: rgb(84, 49, 141);
+  font-weight: bold;
 }
 
 .player-piece {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0 0 0.8rem 0;
-}
-
-.edit-player-name-button {
-    margin-bottom: 1rem;
-    color: rgb(84, 49, 141);
-    font-size: 1rem;
-    padding: .5rem 1.5rem;
-    border-radius: 4px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.edit-player-name-button:hover {
-    background-color: rgb(223, 204, 253);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.8rem 0;
 }
 
 .module-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.2);
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
 }
 
 .user-name-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(246, 238, 255);
-    width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(246, 238, 255);
+  width: 30rem;
 }
 
 .user-name-form label {
-    font-weight: bold;
-    margin-bottom: .5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .user-name-form input {
-    padding: .2rem .2rem;
-    margin-bottom: 1rem;
+  padding: 0.2rem 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .user-name-form-button-container {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .user-name-form-button-container button {
-    padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.game-start {
+  margin: 2rem auto;
+  display: block;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-result {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(27, 10, 54);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 8rem;
+  margin: 0;
+  border-radius: 6px;
+}
+
+.game-result-text {
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.hint-after-game {
+    margin: 0 0 1rem 0;
+}
+
+.game-field {
+  display: grid;
+  width: 19rem;
+  height: 19rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem 0.5rem;
+}
+
+.game-field div {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(234, 220, 255);
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.game-field div:hover {
+  background-color: rgb(84, 49, 141);
+}
+
+.game-field .used {
+  background-color: rgb(84, 49, 141);
+}
+
+.hidden {
+  display: none;
 }
